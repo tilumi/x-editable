@@ -3063,7 +3063,8 @@ $(function(){
             this.setClass();
             this.setAttr('placeholder');
             this.setAttr('rows');                        
-            
+            this.setAttr('cols');
+
             //ctrl + enter
             this.$input.keydown(function (e) {
                 if (e.ctrlKey && e.which === 13) {
@@ -3136,7 +3137,9 @@ $(function(){
         @type integer
         @default 7
         **/        
-        rows: 7        
+        rows: 7,       
+
+        cols: 20
     });
 
     $.fn.editabletypes.textarea = Textarea;
